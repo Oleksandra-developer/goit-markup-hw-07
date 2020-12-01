@@ -1,0 +1,41 @@
+.adress {
+  color: $white;
+  margin-top: 20px;
+  font-style: normal;
+}
+.contacts {
+  color: $adress-color;
+}
+footer {
+  background-color: $hero-bg;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact-footer {
+  margin-top: 9px;
+}
+
+.footer-columns {
+  display: flex;
+  align-items: baseline;
+}
+.column + .column {
+  margin-left: 70px;
+}
+.send {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.subscription-label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.icon-send-footer {
+  margin-left: 10px;
+}

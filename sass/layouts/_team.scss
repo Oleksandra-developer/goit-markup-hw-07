@@ -1,0 +1,40 @@
+.our-team {
+  background-color: #f5f4fa;
+}
+%legend-text {
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+}
+.team {
+  @extend %legend-text;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.team-title {
+  @extend %legend-text;
+  font-weight: 500;
+  color: $title-color;
+  margin-bottom: 10px;
+}
+.legend {
+  padding: 30px 32px;
+  box-sizing: border-box;
+}
+
+.team-list {
+  @extend %flex;
+}
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $white;
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+
+  &:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+}
